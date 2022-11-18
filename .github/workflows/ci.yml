@@ -88,7 +88,7 @@ jobs:
         browsers: [chrome]
     steps:
       - uses: actions/checkout@v2.4.0
-      - uses: cypress-io/github-action@v2
+      - uses: cypress-io/github-action@v4
         with:
           start: npm run serve
           wait-on: 'http://localhost:8080'
@@ -125,7 +125,7 @@ jobs:
         browsers: [chrome]
     steps:
       - uses: actions/checkout@v2.4.0
-      - uses: cypress-io/github-action@v2
+      - uses: cypress-io/github-action@v4
         with:
           start: npm run serve
           wait-on: 'http://localhost:8080'
@@ -159,7 +159,7 @@ jobs:
   #         git config --global core.autocrlf false
   #         git config --global core.eol lf
   #     - uses: actions/checkout@v2.4.0
-  #     - uses: cypress-io/github-action@v2
+  #     - uses: cypress-io/github-action@v4
   #       with:
   #         start: npm run serve
   #         wait-on: 'http://localhost:8080'
